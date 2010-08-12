@@ -1,0 +1,33 @@
+#rocket_feedback_form_tab
+#rocket_feedback_form
+
+  %h1#feedback_form_title Feedback
+
+  #feedback_form_email
+    %p
+      %label#feedback_form_email_label Email Address:
+      %label#feedback_form_required *
+    %p  
+      %input#feedback_form_email
+
+  #feedback_form_subject
+    %p 
+      %label#feedback_form_subject Subject:
+      %label#feedback_form_required *
+    %p 
+      %input#feedback_form_subject
+
+  #feedback_form_feedback
+    %p 
+      %label#feedback_form_feedback Feedback:
+      %label#feedback_form_required *
+    %p 
+      %textarea#feedback_form_feedback(rows="5")
+
+  #feedback_form_submit
+    %p 
+      %input#feedback_form_submit(type="submit" value="Submit")
+
+  #feedback_form_info
+    %p 
+      %p#feedback_form_info Thanks for your feedback!

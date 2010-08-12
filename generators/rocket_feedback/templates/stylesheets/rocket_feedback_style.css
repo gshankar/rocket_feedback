@@ -1,0 +1,72 @@
+#rocket_feedback_form {
+  width:              300px;
+  height:             400px;
+  padding:            10px;
+  background-color:   #3D2D29;
+  border-top:         3px solid #E28409;
+  border-right:       3px solid #E28409;
+  border-bottom:      3px solid #E28409;
+  position:           fixed;
+  top:                100px;
+  left:               -330px;
+}
+
+#rocket_feedback_form_tab {
+  width:            30px;
+  height:           100px;
+  background-color: #3D2D29;
+  position:         fixed;
+  top:              100px;
+  left:             0px;
+  border-top:       3px solid #E28409;
+  border-right:     3px solid #E28409;
+  border-bottom:    3px solid #E28409;
+
+  //background-image: url(/images/rc_fb.png);
+}
+
+#rocket_feedback_form p{
+    font-size:      11px;
+    text-transform: uppercase;
+    font-family:    Arial,Helvetica,sans-serif;
+    letter-spacing: 1px;
+    color:          #F0F0F0;
+    position:       relative;
+    left:           20px;
+}
+
+#rocket_feedback_form h1{
+    color:          #F0F0F0;
+    font-size:      24px;
+    margin:         10px 20px 10px 0px;
+    padding-bottom: 20px;
+    position:       relative;
+    left:           20px;
+
+}
+
+#feedback_form_email, #feedback_form_subject, #feedback_form_feedback{
+    width: 250px;
+}
+
+#feedback_form_required{
+    color: red;
+}
+
+#feedback_form_feedback textarea{
+    border-right: 3px solid;
+    border-color: #fff;
+    rows: 5;
+}
+
+#feedback_form_submit{
+    width:    100px;
+    position: relative;
+    left:     78px;
+}
+
+#feedback_form_info{
+    position:   relative;
+    left:       20px;
+}
+

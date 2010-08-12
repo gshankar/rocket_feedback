@@ -1,0 +1,42 @@
+Please do the following to complete your installation of rocket_feedback:
+
+1- Download the latest version of JQuery (jquery.com) and put it in your /public/javascripts/jquery.js 
+
+2- Put the following lines in your application layout
+    
+    stylesheet_link_tag "rocket_feedback_style"
+    javascript_include_tag "jquery"
+    javascript_include_tag "rocket_feedback"
+     
+3- Add the following method to your application_helper
+
+    def rocket_feedback
+      render :partial => 'rocket_feedback/feedback_form'
+    end
+    
+4- Add your mailer settings to your environment.rb file. 
+
+    - If you want to use GMail to send out feedback, use this example as a guide:
+
+    ActionMailer::Base.smtp_settings = {
+      :enable_starttls_auto => true,
+      :address => 'smtp.gmail.com',
+      :port => 587,
+      :domain => 'yourdomain.com',
+      :authentication => :plain,
+      :user_name => 'youraccount@yourdomain.com',
+      :password => 'yourpassword'
+    }
+
+    - If you want to use sendmail to send out feedback, use this example as a guide:
+
+    ActionMailer::Base.sendmail_settings = {
+      :location       => '/usr/sbin/sendmail',
+      :arguments      => '-i -t -f do-not-reply@yourtutor.com.au'
+    }
+
+5- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
+
+    rocket_feedback
+
+Enjoy! If you have any questions or comments, please hit me up via github or email (ganesh@rocket26.com.au)
