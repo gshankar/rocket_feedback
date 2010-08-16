@@ -1,8 +1,5 @@
 class RocketFeedbackController < ApplicationController
   
-  def feedback_form_example
-  end
-  
   #Email method for feedback from any point in the application
   def send_feedback
   	  subject = params["subject"]
