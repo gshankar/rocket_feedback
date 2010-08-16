@@ -35,8 +35,12 @@ Please do the following to complete your installation of rocket_feedback:
       :arguments      => '-i -t -f do-not-reply@yourtutor.com.au'
     }
 
-5- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
+5- Add the emails which you wish feedback to go to in /vendor/plugins/rocket_feedback/lib/app/models/rocket_feedback.rb
 
-    rocket_feedback
+      @recipients = 'youraddress@yourdomain.com'     
+
+6- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
+
+      rocket_feedback
 
 Enjoy! If you have any questions or comments, please hit me up via github or email (ganesh@rocket26.com.au)

@@ -1,13 +1,6 @@
 RocketFeedback
 ==============
 
-Introduction goes here.
+A feedback panel for Ruby on Rails applications. It's built using JQuery for AJAX goodness and uses Rails' ActionMailer to send feeback
 
-
-Example
-=======
-
-Example goes here.
-
-
-Copyright (c) 2010 [name of plugin creator], released under the MIT license
+Copyright (c) 2010 Ganesh Shankar, released under the MIT license
