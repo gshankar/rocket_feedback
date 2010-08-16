@@ -1,4 +1,4 @@
-class RocketFeedbackGenerator < Rails::Generator::NamedBase
+class RocketFeedbackGenerator < Rails::Generator::Base
   def manifest
     record do |m|
    
