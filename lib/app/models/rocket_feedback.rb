@@ -5,7 +5,7 @@ class RocketFeedback < ActionMailer::Base
   def feedback(from, subject, feedback)
     @subject = "Feedback: #{subject}"
     @subject_for_message = subject
-    @recipients = 'youraddress@yourdomain.com' 
+    @recipients = 'ganesh@ganeshshankar.com' 
     @from = from
     @sent_on = Time.now
     @sent_at = Time.now.strftime("%d/%m/%Y, %I:%M:%S %p").to_s

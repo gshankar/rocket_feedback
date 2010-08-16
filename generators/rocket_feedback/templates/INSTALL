@@ -11,7 +11,7 @@ Please do the following to complete your installation of rocket_feedback:
 3- Add the following method to your application_helper
 
     def rocket_feedback
-      render :partial => 'rocket_feedback/feedback_form'
+      render :partial => 'rocket_feedback/rocket_feedback'
     end
     
 4- Add your mailer settings to your environment.rb file. 

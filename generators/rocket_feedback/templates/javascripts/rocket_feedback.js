@@ -21,7 +21,7 @@ function sendFeedback() {
   $('.holder').hide();
   $('#loading').show();
   $.ajax({
-    url: '/rocket_feedback/sendmail',
+    url: '/rocket_feedback',
     data: {
       subject:$('#feedback_form_subject').val(), 
       email:$('#feedback_form_email').val(), 
