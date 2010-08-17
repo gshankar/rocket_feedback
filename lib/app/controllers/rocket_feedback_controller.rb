@@ -5,7 +5,7 @@ class RocketFeedbackController < ApplicationController
   	  subject = params["subject"]
   	  from = params["email"]
   	  feedback = params["feedback"]
-      RocketFeedback::deliver_feedback(from, subject, feedback)
+      RocketFeedbackMailer.deliver_feedback(from, subject, feedback)
       respond_to do |format|
         format.js { render :text => ''}
       end

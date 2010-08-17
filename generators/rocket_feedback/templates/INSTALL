@@ -43,4 +43,6 @@ Please do the following to complete your installation of rocket_feedback:
 
       rocket_feedback
 
+7- Update the ROCKET_FEEDBACK_HOST variable in /config/initializers/rocket_feedback.rb to a host of your preference
+
 Enjoy! If you have any questions or comments, please hit me up via github or email (ganesh@rocket26.com.au)

@@ -1,7 +1,10 @@
 class RocketFeedbackGenerator < Rails::Generator::Base
   def manifest
     record do |m|
-  
+      
+      #initializers
+      m.file "initializers/rocket_feedback.rb", "config/initializers/rocket_feedback.rb"
+
       #views
       m.directory "app/views/rocket_feedback"
       m.file "views/rocket_feedback/_feedback_form.html.haml", "app/views/rocket_feedback/_rocket_feedback.html.haml"

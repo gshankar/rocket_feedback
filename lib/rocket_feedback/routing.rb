@@ -1,4 +1,4 @@
-module RocketFeedback #:nodoc:
+module RocketFeedbackModule #:nodoc:
   module Routing #:nodoc:
     module MapperExtensions
       def rocket_feedback
@@ -8,7 +8,4 @@ module RocketFeedback #:nodoc:
   end
 end
 
-ActionController::Routing::RouteSet::Mapper.send :include, RocketFeedback::Routing::MapperExtensions
-
-
-
+ActionController::Routing::RouteSet::Mapper.send :include, RocketFeedbackModule::Routing::MapperExtensions

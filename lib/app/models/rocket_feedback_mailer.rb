@@ -1,6 +1,5 @@
-class RocketFeedback < ActionMailer::Base
-      
-  default_url_options[:host] = HOST
+class RocketFeedbackMailer < ActionMailer::Base
+  default_url_options[:host] = ROCKET_FEEDBACK_HOST
 
   def feedback(from, subject, feedback)
     @subject = "Feedback: #{subject}"
@@ -14,6 +13,7 @@ class RocketFeedback < ActionMailer::Base
    	@body["feedback"] = feedback
    	@body["subject"] = @subject_for_message
     @headers = {}
+    template "app/views/rocket_feedback/feedback.html.erb"
   end
        
 end
