@@ -48,10 +48,10 @@ $.validator.setDefaults({
 
 $(document).ready(function(){
   $('#rocket_feedback_form_tab').bind("click", toggleRocketFeedbackForm);
-  $('#feedback_form_submit').bind("click", sendFeedback);
 
   // validate feedback form on keyup and submit
   $("#rocket_feedback_form").validate({
+    errorLabelContainer: $("#rocket_feedback_form div.error"),
     rules: {
       feedback_form_email_input: {
         required: true,
@@ -59,6 +59,11 @@ $(document).ready(function(){
       },
       feedback_form_subject_input: "required",
       feedback_form_feedback_input: "required"
+    },
+    messages: {
+      feedback_form_email_input: "Please enter a valid Email Address.",
+      feedback_form_subject_input: "Please enter a Subject.",
+      feedback_form_feedback_input: "Please enter some feedback."
     }
   });
 });
