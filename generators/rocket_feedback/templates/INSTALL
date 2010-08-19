@@ -1,20 +1,18 @@
 Please do the following to complete your installation of rocket_feedback:
 
-1- Download the latest version of JQuery (jquery.com) and put it in your /public/javascripts/jquery.js 
-
-2- Put the following lines in your application layout
+1- Put the following lines in your application layout
     
     stylesheet_link_tag "rocket_feedback_style"
     javascript_include_tag "jquery"
     javascript_include_tag "rocket_feedback"
      
-3- Add the following method to your application_helper
+2- Add the following method to your application_helper
 
     def rocket_feedback
       render :partial => 'rocket_feedback/rocket_feedback'
     end
     
-4- Add your mailer settings to your environment.rb file. 
+3- Add your mailer settings to your environment.rb file. 
 
     - If you want to use GMail to send out feedback, use this example as a guide:
 
@@ -35,17 +33,17 @@ Please do the following to complete your installation of rocket_feedback:
       :arguments      => '-i -t -f do-not-reply@yourtutor.com.au'
     }
 
-5- Add the emails which you wish feedback to go to in /vendor/plugins/rocket_feedback/lib/app/models/rocket_feedback.rb
+4- Add the emails which you wish feedback to go to in /vendor/plugins/rocket_feedback/lib/app/models/rocket_feedback.rb
 
       @recipients = 'youraddress@yourdomain.com'     
 
-6- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
+5- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
 
       rocket_feedback
 
-7- Update the ROCKET_FEEDBACK_HOST variable in /config/initializers/rocket_feedback.rb to a host of your preference
+6- Update the ROCKET_FEEDBACK_HOST variable in /config/initializers/rocket_feedback.rb to a host of your preference
 
-8- Put the following route in your /config/routes.rb file
+7- Put the following route in your /config/routes.rb file
     map.rocket_feedback
 
 Enjoy! If you have any questions or comments, please hit me up via github or email (ganesh@rocket26.com.au)

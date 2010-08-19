@@ -13,6 +13,7 @@ class RocketFeedbackGenerator < Rails::Generator::Base
       #JavascriptFiles
       m.file "javascripts/rocket_feedback.js", "public/javascripts/rocket_feedback.js"
       m.file "javascripts/jquery.js", "public/javascripts/jquery.js"
+      m.file "javascripts/jquery.validate.js", "public/javascripts/jquery.validate.js"
 
       #CSS
       m.file "stylesheets/rocket_feedback_style.css", "public/stylesheets/rocket_feedback_style.css"

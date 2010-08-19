@@ -23,9 +23,9 @@ function sendFeedback() {
   $.ajax({
     url: '/rocket_feedback',
     data: {
-      subject:$('#feedback_form_subject').val(), 
-      email:$('#feedback_form_email').val(), 
-      feedback:$('#feedback_form_feedback').val()
+      subject:$('#feedback_form_subject_input').val(), 
+      email:$('#feedback_form_email_input').val(), 
+      feedback:$('#feedback_form_feedback_input').val()
     },
     dataType: 'js',
     type: 'post',
@@ -42,9 +42,26 @@ function sendFeedback() {
 
 }
 
+$.validator.setDefaults({
+    submitHandler: function() { sendFeedback(); }
+});
+
 $(document).ready(function(){
   $('#rocket_feedback_form_tab').bind("click", toggleRocketFeedbackForm);
   $('#feedback_form_submit').bind("click", sendFeedback);
+
+  // validate feedback form on keyup and submit
+  $("#rocket_feedback_form").validate({
+    rules: {
+      feedback_form_email_input: {
+        required: true,
+        email :true
+      },
+      feedback_form_subject_input: "required",
+      feedback_form_feedback_input: "required"
+    }
+  });
 });
+
 
 

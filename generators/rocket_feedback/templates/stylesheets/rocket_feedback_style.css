@@ -45,7 +45,7 @@
 
 }
 
-#feedback_form_email, #feedback_form_subject, #feedback_form_feedback{
+#feedback_form_email_input, #feedback_form_subject_input, #feedback_form_feedback_input{
     width: 250px;
 }
 
