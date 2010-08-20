@@ -14,7 +14,7 @@ Rocket Feedback depends on the following technologies:
 1. Ruby on Rails - ( The plugin was built and tested on 2.3.8 but never fear, a Rails 3 version will be on the way shortly)
 2. ActionMailer - to send email feedback
 3. JQuery - for AJAX goodness
-4. Jquery Validate Plugin - for beautify and easily extensible validation of the feedback form
+4. Jquery Validate Plugin - for beautiful and easily extensible validation of the feedback form
 5. HAML - (I plan to release an option to choose either HAML or ERB views in a future update)
 
 I can haz Rocket Feedback?
