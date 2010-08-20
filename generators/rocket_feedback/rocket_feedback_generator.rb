@@ -17,6 +17,9 @@ class RocketFeedbackGenerator < Rails::Generator::Base
 
       #CSS
       m.file "stylesheets/rocket_feedback_style.css", "public/stylesheets/rocket_feedback_style.css"
+      
+      #images
+      m.file "images/feedback_blank_tab.png", "public/images/feedback_blank_tab.png"
 
       #instructions for the user
       m.readme "INSTALL"
