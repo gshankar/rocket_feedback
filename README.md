@@ -22,10 +22,12 @@ I can haz Rocket Feedback?
 
 Yes you can. Just install the plugin using:
 
-script/plugin install git://github.com/gshankar/rocket_feedback.git
+`script/plugin install git://github.com/gshankar/rocket_feedback.git`
 
 from your app's root directory. Then call: 
 
-script/generate rocket_feedback and... MAGIC! (follow the instructions that the generator gives you on how to complete your setup)
+`script/generate rocket_feedback` 
 
-Copyright (c) 2010 Ganesh Shankar, released under the MIT license
+and... MAGIC! (i.e. follow the instructions that the generator gives you on how to complete your setup)
+
+Copyright (c) 2010 Ganesh Shankar (ganesh@rocket26.com.au), released under the MIT license
