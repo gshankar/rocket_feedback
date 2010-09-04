@@ -4,6 +4,7 @@ Please do the following to complete your installation of rocket_feedback:
     
     stylesheet_link_tag "rocket_feedback_style"
     javascript_include_tag "jquery"
+    javascript_include_tag "jquery.validate"
     javascript_include_tag "rocket_feedback"
      
 2- Add the following method to your application_helper
@@ -37,7 +38,7 @@ Please do the following to complete your installation of rocket_feedback:
 
       @recipients = 'youraddress@yourdomain.com'     
 
-5- Execute the following function on any page where you require the rocket_feedback tab (you can put it in the body of application layout if you want it on every page)
+5- Place the following method in your views wherever you want the Rocket Feedback panel to appear. You can place it in your application controller if you wish it to appear on every page.
 
       rocket_feedback
 
