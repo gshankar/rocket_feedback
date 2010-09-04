@@ -16,10 +16,23 @@ feedback_visible = false;
 
 }
 
+function hideFeedbackTab() {
+  $('#rocket_feedback_form').animate({'left':'-330px'},300);
+  $('#rocket_feedback_form_tab').animate({'left':'0px'},300);
+
+  feedback_visible = false;
+  setTimeout(function(){  
+    $('#feedback_form_subject_input').val(""); 
+    $('#feedback_form_email_input').val("");
+    $('#feedback_form_feedback_input').val("");
+    $('#feedback_form_info_text').html('Thanks for your feedback!');
+    $('#feedback_form_submit_input').attr('disabled', false);
+    
+  }, 1000);
+}
 
 function sendFeedback() {
-  $('.holder').hide();
-  $('#loading').show();
+  $('#feedback_form_submit_input').attr('disabled', true);
   $.ajax({
     url: '/rocket_feedback',
     data: {
@@ -33,13 +46,11 @@ function sendFeedback() {
     }
 
   });
-  $('#rocket_feedback_form').animate({'left':'-330px'},300);
-  $('#rocket_feedback_form_tab').animate({'left':'0px'},300);
 
+  $('#feedback_form_info_text').html('Sending your feedback...');
 
-
-  feedback_visible = false;
-
+  //Hide Feedback Tab
+  setTimeout(hideFeedbackTab, 2000);
 }
 
 $.validator.setDefaults({

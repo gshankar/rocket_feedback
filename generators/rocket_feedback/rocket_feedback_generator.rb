@@ -1,4 +1,10 @@
 class RocketFeedbackGenerator < Rails::Generator::Base
+
+  # def initialize(*runtime_options)
+  #   super(runtime_options)
+  #   @rocket_args = runtime_options.first
+  # end
+
   def manifest
     record do |m|
       
@@ -7,7 +13,7 @@ class RocketFeedbackGenerator < Rails::Generator::Base
 
       #views
       m.directory "app/views/rocket_feedback"
-      m.file "views/rocket_feedback/_feedback_form.html.haml", "app/views/rocket_feedback/_rocket_feedback.html.haml"
+      m.file "views/rocket_feedback/_feedback_form.html.erb", "app/views/rocket_feedback/_rocket_feedback.html.erb"
       m.file "views/rocket_feedback/feedback.html.erb", "app/views/rocket_feedback/feedback.html.erb"
 
       #JavascriptFiles
@@ -23,6 +29,10 @@ class RocketFeedbackGenerator < Rails::Generator::Base
 
       #instructions for the user
       m.readme "INSTALL"
+
+      #testing
+      # debugger
+      # m.template "stuff.txt", File.join("public", "stuff.txt"), :assigns => {:args => @rocket_args}
     end
   end
 end

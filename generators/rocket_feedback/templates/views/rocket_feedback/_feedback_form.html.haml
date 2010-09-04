@@ -6,21 +6,21 @@
   #feedback_form_email
     %p
       %label#feedback_form_email_label Email Address:
-      %label#feedback_form_required *
+      %label.feedback_form_required *
     %p  
       %input#feedback_form_email_input(name="feedback_form_email_input")
 
   #feedback_form_subject
     %p 
       %label#feedback_form_subject Subject:
-      %label#feedback_form_required *
+      %label.feedback_form_required *
     %p 
       %input#feedback_form_subject_input(name="feedback_form_subject_input")
 
   #feedback_form_feedback
     %p 
       %label#feedback_form_feedback Feedback:
-      %label#feedback_form_required *
+      %label.feedback_form_required *
     %p 
       %textarea#feedback_form_feedback_input(name="feedback_form_feedback_input" rows="5")
       
@@ -28,9 +28,8 @@
 
   #feedback_form_submit
     %p 
-      %input#feedback_form_submit(type="submit" value="Submit")
+      %input#feedback_form_submit_input(type="submit" value="Submit")
 
   #feedback_form_info
-    %p 
-      %p#feedback_form_info Thanks for your feedback!
+    %p#feedback_form_info_text Thanks for your feedback!
 

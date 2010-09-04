@@ -47,7 +47,7 @@
     width: 250px;
 }
 
-#feedback_form_required{
+.feedback_form_required{
     color: red;
 }
 
@@ -68,7 +68,7 @@
     rows: 5;
 }
 
-#feedback_form_submit{
+#feedback_form_submit_input{
     width:    100px;
     position: relative;
     left:     78px;
