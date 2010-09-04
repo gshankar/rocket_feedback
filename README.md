@@ -3,7 +3,7 @@ RocketFeedback
 
 A simple feedback panel for Ruby on Rails applications. It works like this:
 
-The Rocket Feedback panel sits quietly off the page (like a ninja), ready to strike (like lightning) at the first sign of trouble. Pouncing (like a tiger) before your user has had the time to forget their fantastic idea on how you could improve your app, Rocket Feedback grabs this idea (like a giant electromagnet wielding crane) and whisks it away to you (like a... pigeon... with LASERS!)
+The Rocket Feedback panel sits quietly off the page (like a ninja), ready to strike (like lightning) at the first sign of trouble. Pouncing (like a tiger) before your user has had the time to forget their fantastic idea on how you could improve your app, Rocket Feedback grabs this idea (like a giant electromagnet wielding crane) and whisks it away to you (like a... pigeon... on fire... with LASERS!)
 
 
 What makes it tick?
@@ -15,7 +15,6 @@ Rocket Feedback depends on the following technologies:
 2. ActionMailer - to send email feedback
 3. JQuery - for AJAX goodness
 4. Jquery Validate Plugin - for beautiful and easily extensible validation of the feedback form
-5. HAML - (I plan to release an option to choose either HAML or ERB views in a future update)
 
 I can haz Rocket Feedback?
 --------------------------
